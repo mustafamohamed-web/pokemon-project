@@ -1,0 +1,8 @@
+.container {
+  border: 1px white solid;
+  margin-top: 5em;
+}
+
+.pokemon-name {
+  color: white;
+}

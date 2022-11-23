@@ -5,12 +5,12 @@ const Pokemon = ({ pokemon }) => {
   console.log(pokemon);
 
   return (
-    <div>
-      {pokemon.slice(1, 10).map((item) => {
+    <div className="container">
+      {pokemon.slice(0, 10).map((item) => {
         const { name, url } = item;
         return (
           <div>
-            <p>{name}</p>
+            <p className="pokemon-name">{name}</p>
             <img src={url} alt="" />
           </div>
         );
