@@ -1,0 +1,8 @@
+nav {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 5em;
+  margin-bottom: 2em;
+}
