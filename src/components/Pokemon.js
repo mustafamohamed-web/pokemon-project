@@ -7,9 +7,10 @@ const Pokemon = ({ pokemon }) => {
     <div className="container">
       {pokemon.slice(0, 10).map((item) => {
         return (
-          <div>
+          <div className="pokemon-container">
             <p className="pokemon-name">{item.name}</p>
-            <img src={item.sprites.back_default} alt="" />
+            <img src={item.sprites.back_shiny} alt="" />
+            <p className="height">{item.height}</p>
           </div>
         );
       })}

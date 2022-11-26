@@ -38,10 +38,12 @@ const SearchBar = () => {
     setText(e.target.value);
   };
   return (
-    <form className="input-container">
-      <input type="text" value={text} onChange={handleSubmit} />
+    <>
+      <form className="input-container">
+        <input type="text" value={text} onChange={handleSubmit} />
+      </form>
       <Pokemon pokemon={pokemon} />
-    </form>
+    </>
   );
 };
 

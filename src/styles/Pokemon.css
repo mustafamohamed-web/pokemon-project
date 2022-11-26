@@ -1,8 +1,21 @@
 .container {
   border: 1px white solid;
   margin-top: 5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+.pokemon-container {
+  border: 1px solid white;
+  width: 180px;
+  height: 300px;
+  border-radius: 1rem;
 }
 
 .pokemon-name {
+  color: white;
+}
+
+.height {
   color: white;
 }
