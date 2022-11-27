@@ -1,5 +1,4 @@
 .container {
-  border: 1px white solid;
   margin-top: 5em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -10,12 +9,36 @@
   width: 180px;
   height: 300px;
   border-radius: 1rem;
+  background-color: orange;
 }
 
 .pokemon-name {
   color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: center;
 }
 
-.height {
+.attack {
   color: white;
+  margin-left: 1em;
+  padding-bottom: 2em;
+  border: 1px solid red;
+  width: 5em;
+  background-color: red;
+  border-radius: 2em;
+  padding: 0.5em;
+}
+
+img {
+  height: 150px;
+}
+
+.moves {
+  color: white;
+  margin-left: 1em;
+  border: 1px solid olive;
+  width: 7em;
+  background-color: olive;
+  border-radius: 2em;
 }
