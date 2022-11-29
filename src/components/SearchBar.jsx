@@ -4,19 +4,22 @@ import Pokemon from "./Pokemon";
 import axios from "axios";
 
 const SearchBar = () => {
-  const [text, setText] = useState();
+  const [text, setText] = useState("");
   const [pokemon, setPokemon] = useState([]);
   const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon/");
   const [nextUrl, setNextUrl] = useState();
   const [prevUrl, setPrevUrl] = useState();
+  const [data, setData] = useState([]);
 
   const getPokemon = async () => {
     const response = await fetch(url);
     const data = await response.json();
-    // setPokemon(data.results);
+
     setNextUrl(data.next);
     setPrevUrl(data.prev);
     pokeFunction(data.results);
+    setData(data.results);
+    console.log(data.results);
   };
 
   const pokeFunction = async (data) => {
@@ -42,7 +45,7 @@ const SearchBar = () => {
       <form className="input-container">
         <input type="text" value={text} onChange={handleSubmit} />
       </form>
-      <Pokemon pokemon={pokemon} />
+      <Pokemon pokemon={pokemon} data={data} text={text} />
     </>
   );
 };

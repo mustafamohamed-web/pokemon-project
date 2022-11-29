@@ -6,7 +6,7 @@
 }
 .pokemon-container {
   border: 1px solid white;
-  width: 180px;
+  width: 200px;
   height: 300px;
   border-radius: 1rem;
   background-color: orange;
@@ -28,6 +28,9 @@
   background-color: red;
   border-radius: 2em;
   padding: 0.5em;
+  position: relative;
+  bottom: 2em;
+  right: 1em;
 }
 
 img {
@@ -37,8 +40,13 @@ img {
 .moves {
   color: white;
   margin-left: 1em;
+  padding-bottom: 2em;
   border: 1px solid olive;
-  width: 7em;
+  width: 5em;
   background-color: olive;
   border-radius: 2em;
+  padding: 0.5em;
+  position: relative;
+  bottom: 2em;
+  right: 1em;
 }
