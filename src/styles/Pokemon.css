@@ -1,52 +1,34 @@
 .container {
-  margin-top: 5em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 1em;
+  margin-left: 6em;
+  position: relative;
+  bottom: 3.5em;
 }
 .pokemon-container {
   border: 1px solid white;
-  width: 200px;
+  width: 220px;
   height: 300px;
   border-radius: 1rem;
-  background-color: orange;
+  background-color: red;
 }
 
 .pokemon-name {
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 1.25rem;
   text-align: center;
 }
 
-.attack {
-  color: white;
-  margin-left: 1em;
-  padding-bottom: 2em;
-  border: 1px solid red;
-  width: 5em;
-  background-color: red;
-  border-radius: 2em;
-  padding: 0.5em;
-  position: relative;
-  bottom: 2em;
-  right: 1em;
-}
-
 img {
   height: 150px;
+  margin-left: 2em;
+  width: 150px;
 }
 
 .moves {
-  color: white;
-  margin-left: 1em;
+  color: black;
+  margin-left: 4em;
   padding-bottom: 2em;
-  border: 1px solid olive;
-  width: 5em;
-  background-color: olive;
-  border-radius: 2em;
-  padding: 0.5em;
-  position: relative;
-  bottom: 2em;
-  right: 1em;
 }

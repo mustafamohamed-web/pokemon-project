@@ -24,8 +24,8 @@ const Pokemon = ({ pokemon, data, text }) => {
             <p className="pokemon-name">
               {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
             </p>
-            <img src={item.sprites.back_shiny} alt="" />
-            <p className="attack">Attack: {item.stats[0].base_stat}</p>
+            <img src={item.sprites.other.dream_world.front_default} alt="" />
+
             {/* <p className="moves">Moves: {item.moves[0].move.name}</p> */}
             <p className="moves">Type: {item.types[0].type.name}</p>
           </div>
